@@ -47,6 +47,9 @@ const calculate = require('./calculate-back-end.js')
 // 5 + 5
 // 6 minus 4
 // 10 X 5
+const num1 = process.argv[2]
+const operation = process.argv[3]
+const num2 = process.argv[4]
 
 
 // Use (well-named) variables to store the user inputs that are available in the process.argv array.
@@ -71,11 +74,11 @@ const calculate = require('./calculate-back-end.js')
 
 // Store the return value of our calculate function, making sure to feed it the correct values from our user input.
 
-
+const result = calculate(num1,num2,operation)
 /******************************************
  * STEP 4 - PRINT IT BACK TO THE TERMINAL *
  ******************************************/
 
 // Take the return value from the previous step and print it back out to the user.
-
+console.log(result)
 
